@@ -1,0 +1,1812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s1="http://tempuri.org/AbstractTypes" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Check_Status">
+        <s:complexType />
+      </s:element>
+      <s:element name="Check_StatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Check_StatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServerTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetServerTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServerTimeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_No" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seat_No" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Local_IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Subject_Code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Batch" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MAC" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paper_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans5" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans6" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans7" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans8" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans9" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans10" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Question1Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paper_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans5" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans6" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans7" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans8" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans9" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans10" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Question2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question3A">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paper_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans5" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans6" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans7" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans8" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans9" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans10" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question3AResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Question3AResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question3B">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paper_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans11" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans12" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans13" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans14" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans15" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans16" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans17" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans18" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans19" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans20" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question3BResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Question3BResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question4">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paper_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans5" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Question4Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question5">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paper_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Question5Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question6">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paper_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question6Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Question6Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question7">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paper_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans3" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question7Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Question7Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question8">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paper_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ans2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Question8Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Question8Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Final_Ans">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paper_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q1Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q1Ans2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q1Ans3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q1Ans4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q1Ans5" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q1Ans6" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q1Ans7" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q1Ans8" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q1Ans9" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q1Ans10" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q2Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q2Ans2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q2Ans3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q2Ans4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q2Ans5" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q2Ans6" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q2Ans7" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q2Ans8" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q2Ans9" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q2Ans10" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3AAns1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3AAns2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3AAns3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3AAns4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3AAns5" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3AAns6" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3AAns7" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3AAns8" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3AAns9" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3AAns10" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3BAns11" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3BAns12" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3BAns13" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3BAns14" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3BAns15" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3BAns16" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3BAns17" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3BAns18" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3BAns19" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q3BAns20" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q4Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q4Ans2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q4Ans3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q4Ans4" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q4Ans5" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q5Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q5Ans2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q6Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q6Ans2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q7Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q7Ans2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q7Ans3" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q8Ans1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Q8Ans2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Final_AnsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Final_AnsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ErrorLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Error" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QuestionNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ErrorLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorLogResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReloginData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Index_no" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Seatno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Paper_ID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetReloginDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetReloginDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Batch" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bytes" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadFileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema targetNamespace="http://tempuri.org/AbstractTypes">
+      <s:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <s:complexType name="StringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string" />
+            </s:sequence>
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Check_StatusSoapIn">
+    <wsdl:part name="parameters" element="tns:Check_Status" />
+  </wsdl:message>
+  <wsdl:message name="Check_StatusSoapOut">
+    <wsdl:part name="parameters" element="tns:Check_StatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServerTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServerTime" />
+  </wsdl:message>
+  <wsdl:message name="GetServerTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServerTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="Question1SoapIn">
+    <wsdl:part name="parameters" element="tns:Question1" />
+  </wsdl:message>
+  <wsdl:message name="Question1SoapOut">
+    <wsdl:part name="parameters" element="tns:Question1Response" />
+  </wsdl:message>
+  <wsdl:message name="Question2SoapIn">
+    <wsdl:part name="parameters" element="tns:Question2" />
+  </wsdl:message>
+  <wsdl:message name="Question2SoapOut">
+    <wsdl:part name="parameters" element="tns:Question2Response" />
+  </wsdl:message>
+  <wsdl:message name="Question3ASoapIn">
+    <wsdl:part name="parameters" element="tns:Question3A" />
+  </wsdl:message>
+  <wsdl:message name="Question3ASoapOut">
+    <wsdl:part name="parameters" element="tns:Question3AResponse" />
+  </wsdl:message>
+  <wsdl:message name="Question3BSoapIn">
+    <wsdl:part name="parameters" element="tns:Question3B" />
+  </wsdl:message>
+  <wsdl:message name="Question3BSoapOut">
+    <wsdl:part name="parameters" element="tns:Question3BResponse" />
+  </wsdl:message>
+  <wsdl:message name="Question4SoapIn">
+    <wsdl:part name="parameters" element="tns:Question4" />
+  </wsdl:message>
+  <wsdl:message name="Question4SoapOut">
+    <wsdl:part name="parameters" element="tns:Question4Response" />
+  </wsdl:message>
+  <wsdl:message name="Question5SoapIn">
+    <wsdl:part name="parameters" element="tns:Question5" />
+  </wsdl:message>
+  <wsdl:message name="Question5SoapOut">
+    <wsdl:part name="parameters" element="tns:Question5Response" />
+  </wsdl:message>
+  <wsdl:message name="Question6SoapIn">
+    <wsdl:part name="parameters" element="tns:Question6" />
+  </wsdl:message>
+  <wsdl:message name="Question6SoapOut">
+    <wsdl:part name="parameters" element="tns:Question6Response" />
+  </wsdl:message>
+  <wsdl:message name="Question7SoapIn">
+    <wsdl:part name="parameters" element="tns:Question7" />
+  </wsdl:message>
+  <wsdl:message name="Question7SoapOut">
+    <wsdl:part name="parameters" element="tns:Question7Response" />
+  </wsdl:message>
+  <wsdl:message name="Question8SoapIn">
+    <wsdl:part name="parameters" element="tns:Question8" />
+  </wsdl:message>
+  <wsdl:message name="Question8SoapOut">
+    <wsdl:part name="parameters" element="tns:Question8Response" />
+  </wsdl:message>
+  <wsdl:message name="Final_AnsSoapIn">
+    <wsdl:part name="parameters" element="tns:Final_Ans" />
+  </wsdl:message>
+  <wsdl:message name="Final_AnsSoapOut">
+    <wsdl:part name="parameters" element="tns:Final_AnsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ErrorLogSoapIn">
+    <wsdl:part name="parameters" element="tns:ErrorLog" />
+  </wsdl:message>
+  <wsdl:message name="ErrorLogSoapOut">
+    <wsdl:part name="parameters" element="tns:ErrorLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetReloginDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetReloginData" />
+  </wsdl:message>
+  <wsdl:message name="GetReloginDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetReloginDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="Check_StatusHttpGetIn" />
+  <wsdl:message name="Check_StatusHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetServerTimeHttpGetIn" />
+  <wsdl:message name="GetServerTimeHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpGetIn">
+    <wsdl:part name="Index_No" type="s:string" />
+    <wsdl:part name="Seat_No" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="Local_IP" type="s:string" />
+    <wsdl:part name="Subject_Code" type="s:string" />
+    <wsdl:part name="Batch" type="s:string" />
+    <wsdl:part name="MAC" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Question1HttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+    <wsdl:part name="Ans3" type="s:string" />
+    <wsdl:part name="Ans4" type="s:string" />
+    <wsdl:part name="Ans5" type="s:string" />
+    <wsdl:part name="Ans6" type="s:string" />
+    <wsdl:part name="Ans7" type="s:string" />
+    <wsdl:part name="Ans8" type="s:string" />
+    <wsdl:part name="Ans9" type="s:string" />
+    <wsdl:part name="Ans10" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question1HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question2HttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+    <wsdl:part name="Ans3" type="s:string" />
+    <wsdl:part name="Ans4" type="s:string" />
+    <wsdl:part name="Ans5" type="s:string" />
+    <wsdl:part name="Ans6" type="s:string" />
+    <wsdl:part name="Ans7" type="s:string" />
+    <wsdl:part name="Ans8" type="s:string" />
+    <wsdl:part name="Ans9" type="s:string" />
+    <wsdl:part name="Ans10" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question2HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question3AHttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+    <wsdl:part name="Ans3" type="s:string" />
+    <wsdl:part name="Ans4" type="s:string" />
+    <wsdl:part name="Ans5" type="s:string" />
+    <wsdl:part name="Ans6" type="s:string" />
+    <wsdl:part name="Ans7" type="s:string" />
+    <wsdl:part name="Ans8" type="s:string" />
+    <wsdl:part name="Ans9" type="s:string" />
+    <wsdl:part name="Ans10" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question3AHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question3BHttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans11" type="s:string" />
+    <wsdl:part name="Ans12" type="s:string" />
+    <wsdl:part name="Ans13" type="s:string" />
+    <wsdl:part name="Ans14" type="s:string" />
+    <wsdl:part name="Ans15" type="s:string" />
+    <wsdl:part name="Ans16" type="s:string" />
+    <wsdl:part name="Ans17" type="s:string" />
+    <wsdl:part name="Ans18" type="s:string" />
+    <wsdl:part name="Ans19" type="s:string" />
+    <wsdl:part name="Ans20" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question3BHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question4HttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+    <wsdl:part name="Ans3" type="s:string" />
+    <wsdl:part name="Ans4" type="s:string" />
+    <wsdl:part name="Ans5" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question4HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question5HttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question5HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question6HttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question6HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question7HttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+    <wsdl:part name="Ans3" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question7HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question8HttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question8HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Final_AnsHttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Q1Ans1" type="s:string" />
+    <wsdl:part name="Q1Ans2" type="s:string" />
+    <wsdl:part name="Q1Ans3" type="s:string" />
+    <wsdl:part name="Q1Ans4" type="s:string" />
+    <wsdl:part name="Q1Ans5" type="s:string" />
+    <wsdl:part name="Q1Ans6" type="s:string" />
+    <wsdl:part name="Q1Ans7" type="s:string" />
+    <wsdl:part name="Q1Ans8" type="s:string" />
+    <wsdl:part name="Q1Ans9" type="s:string" />
+    <wsdl:part name="Q1Ans10" type="s:string" />
+    <wsdl:part name="Q2Ans1" type="s:string" />
+    <wsdl:part name="Q2Ans2" type="s:string" />
+    <wsdl:part name="Q2Ans3" type="s:string" />
+    <wsdl:part name="Q2Ans4" type="s:string" />
+    <wsdl:part name="Q2Ans5" type="s:string" />
+    <wsdl:part name="Q2Ans6" type="s:string" />
+    <wsdl:part name="Q2Ans7" type="s:string" />
+    <wsdl:part name="Q2Ans8" type="s:string" />
+    <wsdl:part name="Q2Ans9" type="s:string" />
+    <wsdl:part name="Q2Ans10" type="s:string" />
+    <wsdl:part name="Q3AAns1" type="s:string" />
+    <wsdl:part name="Q3AAns2" type="s:string" />
+    <wsdl:part name="Q3AAns3" type="s:string" />
+    <wsdl:part name="Q3AAns4" type="s:string" />
+    <wsdl:part name="Q3AAns5" type="s:string" />
+    <wsdl:part name="Q3AAns6" type="s:string" />
+    <wsdl:part name="Q3AAns7" type="s:string" />
+    <wsdl:part name="Q3AAns8" type="s:string" />
+    <wsdl:part name="Q3AAns9" type="s:string" />
+    <wsdl:part name="Q3AAns10" type="s:string" />
+    <wsdl:part name="Q3BAns11" type="s:string" />
+    <wsdl:part name="Q3BAns12" type="s:string" />
+    <wsdl:part name="Q3BAns13" type="s:string" />
+    <wsdl:part name="Q3BAns14" type="s:string" />
+    <wsdl:part name="Q3BAns15" type="s:string" />
+    <wsdl:part name="Q3BAns16" type="s:string" />
+    <wsdl:part name="Q3BAns17" type="s:string" />
+    <wsdl:part name="Q3BAns18" type="s:string" />
+    <wsdl:part name="Q3BAns19" type="s:string" />
+    <wsdl:part name="Q3BAns20" type="s:string" />
+    <wsdl:part name="Q4Ans1" type="s:string" />
+    <wsdl:part name="Q4Ans2" type="s:string" />
+    <wsdl:part name="Q4Ans3" type="s:string" />
+    <wsdl:part name="Q4Ans4" type="s:string" />
+    <wsdl:part name="Q4Ans5" type="s:string" />
+    <wsdl:part name="Q5Ans1" type="s:string" />
+    <wsdl:part name="Q5Ans2" type="s:string" />
+    <wsdl:part name="Q6Ans1" type="s:string" />
+    <wsdl:part name="Q6Ans2" type="s:string" />
+    <wsdl:part name="Q7Ans1" type="s:string" />
+    <wsdl:part name="Q7Ans2" type="s:string" />
+    <wsdl:part name="Q7Ans3" type="s:string" />
+    <wsdl:part name="Q8Ans1" type="s:string" />
+    <wsdl:part name="Q8Ans2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Final_AnsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ErrorLogHttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Error" type="s:string" />
+    <wsdl:part name="QuestionNo" type="s:string" />
+    <wsdl:part name="Type" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ErrorLogHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetReloginDataHttpGetIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetReloginDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpGetIn">
+    <wsdl:part name="fileName" type="s:string" />
+    <wsdl:part name="Batch" type="s:string" />
+    <wsdl:part name="bytes" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Check_StatusHttpPostIn" />
+  <wsdl:message name="Check_StatusHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetServerTimeHttpPostIn" />
+  <wsdl:message name="GetServerTimeHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpPostIn">
+    <wsdl:part name="Index_No" type="s:string" />
+    <wsdl:part name="Seat_No" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="Local_IP" type="s:string" />
+    <wsdl:part name="Subject_Code" type="s:string" />
+    <wsdl:part name="Batch" type="s:string" />
+    <wsdl:part name="MAC" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Question1HttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+    <wsdl:part name="Ans3" type="s:string" />
+    <wsdl:part name="Ans4" type="s:string" />
+    <wsdl:part name="Ans5" type="s:string" />
+    <wsdl:part name="Ans6" type="s:string" />
+    <wsdl:part name="Ans7" type="s:string" />
+    <wsdl:part name="Ans8" type="s:string" />
+    <wsdl:part name="Ans9" type="s:string" />
+    <wsdl:part name="Ans10" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question1HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question2HttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+    <wsdl:part name="Ans3" type="s:string" />
+    <wsdl:part name="Ans4" type="s:string" />
+    <wsdl:part name="Ans5" type="s:string" />
+    <wsdl:part name="Ans6" type="s:string" />
+    <wsdl:part name="Ans7" type="s:string" />
+    <wsdl:part name="Ans8" type="s:string" />
+    <wsdl:part name="Ans9" type="s:string" />
+    <wsdl:part name="Ans10" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question2HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question3AHttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+    <wsdl:part name="Ans3" type="s:string" />
+    <wsdl:part name="Ans4" type="s:string" />
+    <wsdl:part name="Ans5" type="s:string" />
+    <wsdl:part name="Ans6" type="s:string" />
+    <wsdl:part name="Ans7" type="s:string" />
+    <wsdl:part name="Ans8" type="s:string" />
+    <wsdl:part name="Ans9" type="s:string" />
+    <wsdl:part name="Ans10" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question3AHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question3BHttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans11" type="s:string" />
+    <wsdl:part name="Ans12" type="s:string" />
+    <wsdl:part name="Ans13" type="s:string" />
+    <wsdl:part name="Ans14" type="s:string" />
+    <wsdl:part name="Ans15" type="s:string" />
+    <wsdl:part name="Ans16" type="s:string" />
+    <wsdl:part name="Ans17" type="s:string" />
+    <wsdl:part name="Ans18" type="s:string" />
+    <wsdl:part name="Ans19" type="s:string" />
+    <wsdl:part name="Ans20" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question3BHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question4HttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+    <wsdl:part name="Ans3" type="s:string" />
+    <wsdl:part name="Ans4" type="s:string" />
+    <wsdl:part name="Ans5" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question4HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question5HttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question5HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question6HttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question6HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question7HttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+    <wsdl:part name="Ans3" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question7HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Question8HttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Ans1" type="s:string" />
+    <wsdl:part name="Ans2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Question8HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Final_AnsHttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+    <wsdl:part name="Q1Ans1" type="s:string" />
+    <wsdl:part name="Q1Ans2" type="s:string" />
+    <wsdl:part name="Q1Ans3" type="s:string" />
+    <wsdl:part name="Q1Ans4" type="s:string" />
+    <wsdl:part name="Q1Ans5" type="s:string" />
+    <wsdl:part name="Q1Ans6" type="s:string" />
+    <wsdl:part name="Q1Ans7" type="s:string" />
+    <wsdl:part name="Q1Ans8" type="s:string" />
+    <wsdl:part name="Q1Ans9" type="s:string" />
+    <wsdl:part name="Q1Ans10" type="s:string" />
+    <wsdl:part name="Q2Ans1" type="s:string" />
+    <wsdl:part name="Q2Ans2" type="s:string" />
+    <wsdl:part name="Q2Ans3" type="s:string" />
+    <wsdl:part name="Q2Ans4" type="s:string" />
+    <wsdl:part name="Q2Ans5" type="s:string" />
+    <wsdl:part name="Q2Ans6" type="s:string" />
+    <wsdl:part name="Q2Ans7" type="s:string" />
+    <wsdl:part name="Q2Ans8" type="s:string" />
+    <wsdl:part name="Q2Ans9" type="s:string" />
+    <wsdl:part name="Q2Ans10" type="s:string" />
+    <wsdl:part name="Q3AAns1" type="s:string" />
+    <wsdl:part name="Q3AAns2" type="s:string" />
+    <wsdl:part name="Q3AAns3" type="s:string" />
+    <wsdl:part name="Q3AAns4" type="s:string" />
+    <wsdl:part name="Q3AAns5" type="s:string" />
+    <wsdl:part name="Q3AAns6" type="s:string" />
+    <wsdl:part name="Q3AAns7" type="s:string" />
+    <wsdl:part name="Q3AAns8" type="s:string" />
+    <wsdl:part name="Q3AAns9" type="s:string" />
+    <wsdl:part name="Q3AAns10" type="s:string" />
+    <wsdl:part name="Q3BAns11" type="s:string" />
+    <wsdl:part name="Q3BAns12" type="s:string" />
+    <wsdl:part name="Q3BAns13" type="s:string" />
+    <wsdl:part name="Q3BAns14" type="s:string" />
+    <wsdl:part name="Q3BAns15" type="s:string" />
+    <wsdl:part name="Q3BAns16" type="s:string" />
+    <wsdl:part name="Q3BAns17" type="s:string" />
+    <wsdl:part name="Q3BAns18" type="s:string" />
+    <wsdl:part name="Q3BAns19" type="s:string" />
+    <wsdl:part name="Q3BAns20" type="s:string" />
+    <wsdl:part name="Q4Ans1" type="s:string" />
+    <wsdl:part name="Q4Ans2" type="s:string" />
+    <wsdl:part name="Q4Ans3" type="s:string" />
+    <wsdl:part name="Q4Ans4" type="s:string" />
+    <wsdl:part name="Q4Ans5" type="s:string" />
+    <wsdl:part name="Q5Ans1" type="s:string" />
+    <wsdl:part name="Q5Ans2" type="s:string" />
+    <wsdl:part name="Q6Ans1" type="s:string" />
+    <wsdl:part name="Q6Ans2" type="s:string" />
+    <wsdl:part name="Q7Ans1" type="s:string" />
+    <wsdl:part name="Q7Ans2" type="s:string" />
+    <wsdl:part name="Q7Ans3" type="s:string" />
+    <wsdl:part name="Q8Ans1" type="s:string" />
+    <wsdl:part name="Q8Ans2" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="Final_AnsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ErrorLogHttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="IP" type="s:string" />
+    <wsdl:part name="Error" type="s:string" />
+    <wsdl:part name="QuestionNo" type="s:string" />
+    <wsdl:part name="Type" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ErrorLogHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetReloginDataHttpPostIn">
+    <wsdl:part name="Index_no" type="s:string" />
+    <wsdl:part name="Seatno" type="s:string" />
+    <wsdl:part name="Paper_ID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetReloginDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpPostIn">
+    <wsdl:part name="fileName" type="s:string" />
+    <wsdl:part name="Batch" type="s:string" />
+    <wsdl:part name="bytes" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="Exam_ITSoap">
+    <wsdl:operation name="Check_Status">
+      <wsdl:input message="tns:Check_StatusSoapIn" />
+      <wsdl:output message="tns:Check_StatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <wsdl:input message="tns:GetServerTimeSoapIn" />
+      <wsdl:output message="tns:GetServerTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question1">
+      <wsdl:input message="tns:Question1SoapIn" />
+      <wsdl:output message="tns:Question1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question2">
+      <wsdl:input message="tns:Question2SoapIn" />
+      <wsdl:output message="tns:Question2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question3A">
+      <wsdl:input message="tns:Question3ASoapIn" />
+      <wsdl:output message="tns:Question3ASoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question3B">
+      <wsdl:input message="tns:Question3BSoapIn" />
+      <wsdl:output message="tns:Question3BSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question4">
+      <wsdl:input message="tns:Question4SoapIn" />
+      <wsdl:output message="tns:Question4SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question5">
+      <wsdl:input message="tns:Question5SoapIn" />
+      <wsdl:output message="tns:Question5SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question6">
+      <wsdl:input message="tns:Question6SoapIn" />
+      <wsdl:output message="tns:Question6SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question7">
+      <wsdl:input message="tns:Question7SoapIn" />
+      <wsdl:output message="tns:Question7SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question8">
+      <wsdl:input message="tns:Question8SoapIn" />
+      <wsdl:output message="tns:Question8SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Final_Ans">
+      <wsdl:input message="tns:Final_AnsSoapIn" />
+      <wsdl:output message="tns:Final_AnsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ErrorLog">
+      <wsdl:input message="tns:ErrorLogSoapIn" />
+      <wsdl:output message="tns:ErrorLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReloginData">
+      <wsdl:input message="tns:GetReloginDataSoapIn" />
+      <wsdl:output message="tns:GetReloginDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileSoapIn" />
+      <wsdl:output message="tns:UploadFileSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Exam_ITHttpGet">
+    <wsdl:operation name="Check_Status">
+      <wsdl:input message="tns:Check_StatusHttpGetIn" />
+      <wsdl:output message="tns:Check_StatusHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <wsdl:input message="tns:GetServerTimeHttpGetIn" />
+      <wsdl:output message="tns:GetServerTimeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginHttpGetIn" />
+      <wsdl:output message="tns:LoginHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question1">
+      <wsdl:input message="tns:Question1HttpGetIn" />
+      <wsdl:output message="tns:Question1HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question2">
+      <wsdl:input message="tns:Question2HttpGetIn" />
+      <wsdl:output message="tns:Question2HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question3A">
+      <wsdl:input message="tns:Question3AHttpGetIn" />
+      <wsdl:output message="tns:Question3AHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question3B">
+      <wsdl:input message="tns:Question3BHttpGetIn" />
+      <wsdl:output message="tns:Question3BHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question4">
+      <wsdl:input message="tns:Question4HttpGetIn" />
+      <wsdl:output message="tns:Question4HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question5">
+      <wsdl:input message="tns:Question5HttpGetIn" />
+      <wsdl:output message="tns:Question5HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question6">
+      <wsdl:input message="tns:Question6HttpGetIn" />
+      <wsdl:output message="tns:Question6HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question7">
+      <wsdl:input message="tns:Question7HttpGetIn" />
+      <wsdl:output message="tns:Question7HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question8">
+      <wsdl:input message="tns:Question8HttpGetIn" />
+      <wsdl:output message="tns:Question8HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Final_Ans">
+      <wsdl:input message="tns:Final_AnsHttpGetIn" />
+      <wsdl:output message="tns:Final_AnsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ErrorLog">
+      <wsdl:input message="tns:ErrorLogHttpGetIn" />
+      <wsdl:output message="tns:ErrorLogHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReloginData">
+      <wsdl:input message="tns:GetReloginDataHttpGetIn" />
+      <wsdl:output message="tns:GetReloginDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileHttpGetIn" />
+      <wsdl:output message="tns:UploadFileHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Exam_ITHttpPost">
+    <wsdl:operation name="Check_Status">
+      <wsdl:input message="tns:Check_StatusHttpPostIn" />
+      <wsdl:output message="tns:Check_StatusHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <wsdl:input message="tns:GetServerTimeHttpPostIn" />
+      <wsdl:output message="tns:GetServerTimeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginHttpPostIn" />
+      <wsdl:output message="tns:LoginHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question1">
+      <wsdl:input message="tns:Question1HttpPostIn" />
+      <wsdl:output message="tns:Question1HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question2">
+      <wsdl:input message="tns:Question2HttpPostIn" />
+      <wsdl:output message="tns:Question2HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question3A">
+      <wsdl:input message="tns:Question3AHttpPostIn" />
+      <wsdl:output message="tns:Question3AHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question3B">
+      <wsdl:input message="tns:Question3BHttpPostIn" />
+      <wsdl:output message="tns:Question3BHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question4">
+      <wsdl:input message="tns:Question4HttpPostIn" />
+      <wsdl:output message="tns:Question4HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question5">
+      <wsdl:input message="tns:Question5HttpPostIn" />
+      <wsdl:output message="tns:Question5HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question6">
+      <wsdl:input message="tns:Question6HttpPostIn" />
+      <wsdl:output message="tns:Question6HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question7">
+      <wsdl:input message="tns:Question7HttpPostIn" />
+      <wsdl:output message="tns:Question7HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Question8">
+      <wsdl:input message="tns:Question8HttpPostIn" />
+      <wsdl:output message="tns:Question8HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Final_Ans">
+      <wsdl:input message="tns:Final_AnsHttpPostIn" />
+      <wsdl:output message="tns:Final_AnsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ErrorLog">
+      <wsdl:input message="tns:ErrorLogHttpPostIn" />
+      <wsdl:output message="tns:ErrorLogHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReloginData">
+      <wsdl:input message="tns:GetReloginDataHttpPostIn" />
+      <wsdl:output message="tns:GetReloginDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileHttpPostIn" />
+      <wsdl:output message="tns:UploadFileHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Exam_ITSoap" type="tns:Exam_ITSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Check_Status">
+      <soap:operation soapAction="http://tempuri.org/Check_Status" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <soap:operation soapAction="http://tempuri.org/GetServerTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question1">
+      <soap:operation soapAction="http://tempuri.org/Question1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question2">
+      <soap:operation soapAction="http://tempuri.org/Question2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question3A">
+      <soap:operation soapAction="http://tempuri.org/Question3A" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question3B">
+      <soap:operation soapAction="http://tempuri.org/Question3B" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question4">
+      <soap:operation soapAction="http://tempuri.org/Question4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question5">
+      <soap:operation soapAction="http://tempuri.org/Question5" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question6">
+      <soap:operation soapAction="http://tempuri.org/Question6" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question7">
+      <soap:operation soapAction="http://tempuri.org/Question7" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question8">
+      <soap:operation soapAction="http://tempuri.org/Question8" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Final_Ans">
+      <soap:operation soapAction="http://tempuri.org/Final_Ans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ErrorLog">
+      <soap:operation soapAction="http://tempuri.org/ErrorLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReloginData">
+      <soap:operation soapAction="http://tempuri.org/GetReloginData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap:operation soapAction="http://tempuri.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Exam_ITSoap12" type="tns:Exam_ITSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Check_Status">
+      <soap12:operation soapAction="http://tempuri.org/Check_Status" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <soap12:operation soapAction="http://tempuri.org/GetServerTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question1">
+      <soap12:operation soapAction="http://tempuri.org/Question1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question2">
+      <soap12:operation soapAction="http://tempuri.org/Question2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question3A">
+      <soap12:operation soapAction="http://tempuri.org/Question3A" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question3B">
+      <soap12:operation soapAction="http://tempuri.org/Question3B" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question4">
+      <soap12:operation soapAction="http://tempuri.org/Question4" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question5">
+      <soap12:operation soapAction="http://tempuri.org/Question5" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question6">
+      <soap12:operation soapAction="http://tempuri.org/Question6" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question7">
+      <soap12:operation soapAction="http://tempuri.org/Question7" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question8">
+      <soap12:operation soapAction="http://tempuri.org/Question8" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Final_Ans">
+      <soap12:operation soapAction="http://tempuri.org/Final_Ans" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ErrorLog">
+      <soap12:operation soapAction="http://tempuri.org/ErrorLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReloginData">
+      <soap12:operation soapAction="http://tempuri.org/GetReloginData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap12:operation soapAction="http://tempuri.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Exam_ITHttpGet" type="tns:Exam_ITHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Check_Status">
+      <http:operation location="/Check_Status" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <http:operation location="/GetServerTime" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <http:operation location="/Login" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question1">
+      <http:operation location="/Question1" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question2">
+      <http:operation location="/Question2" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question3A">
+      <http:operation location="/Question3A" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question3B">
+      <http:operation location="/Question3B" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question4">
+      <http:operation location="/Question4" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question5">
+      <http:operation location="/Question5" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question6">
+      <http:operation location="/Question6" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question7">
+      <http:operation location="/Question7" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question8">
+      <http:operation location="/Question8" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Final_Ans">
+      <http:operation location="/Final_Ans" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ErrorLog">
+      <http:operation location="/ErrorLog" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReloginData">
+      <http:operation location="/GetReloginData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <http:operation location="/UploadFile" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Exam_ITHttpPost" type="tns:Exam_ITHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Check_Status">
+      <http:operation location="/Check_Status" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerTime">
+      <http:operation location="/GetServerTime" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <http:operation location="/Login" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question1">
+      <http:operation location="/Question1" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question2">
+      <http:operation location="/Question2" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question3A">
+      <http:operation location="/Question3A" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question3B">
+      <http:operation location="/Question3B" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question4">
+      <http:operation location="/Question4" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question5">
+      <http:operation location="/Question5" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question6">
+      <http:operation location="/Question6" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question7">
+      <http:operation location="/Question7" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Question8">
+      <http:operation location="/Question8" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Final_Ans">
+      <http:operation location="/Final_Ans" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ErrorLog">
+      <http:operation location="/ErrorLog" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReloginData">
+      <http:operation location="/GetReloginData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <http:operation location="/UploadFile" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Exam_IT">
+    <wsdl:port name="Exam_ITSoap" binding="tns:Exam_ITSoap">
+      <soap:address location="http://localhost:81/Exam_IT.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Exam_ITSoap12" binding="tns:Exam_ITSoap12">
+      <soap12:address location="http://localhost:81/Exam_IT.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Exam_ITHttpGet" binding="tns:Exam_ITHttpGet">
+      <http:address location="http://localhost:81/Exam_IT.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Exam_ITHttpPost" binding="tns:Exam_ITHttpPost">
+      <http:address location="http://localhost:81/Exam_IT.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
